@@ -37,4 +37,12 @@ public class StudentRepository {
         this.teacherStudentList=null;
         this.studentTeacherList=null;
     }
+
+    public List<String> sut() {
+        List<String> stringList = new ArrayList<>();
+        for(Map.Entry<String,Student> itr: studentMap.entrySet()){
+            stringList.add(itr.getKey());
+        }
+        return stringList;
+    }
 }
