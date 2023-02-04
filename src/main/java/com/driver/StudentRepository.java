@@ -24,7 +24,7 @@ public class StudentRepository {
         List<String> studentList = teacherStudentList.getOrDefault(teacher,new ArrayList<>());
         for(String str:studentList){
             studentMap.remove(str);
-            studentList.remove(str);
+            studentTeacherList.remove(str);
         }
         teacherMap.remove(teacher);
         teacherStudentList.remove(teacher);
